@@ -73,6 +73,8 @@ public class Alumno implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "alumno")
     private List<ProgramaAlumno> programaAlumnoList;
 
+    //para bajar es pull
+    //para subir es push
     public Alumno() {
     }
 
