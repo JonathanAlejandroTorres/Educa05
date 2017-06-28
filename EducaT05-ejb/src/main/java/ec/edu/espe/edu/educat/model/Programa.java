@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Entidad que define un programa en el instituto. Un programa esta dado por un 
+ * conjunto de cursos.
  */
 package ec.edu.espe.edu.educat.model;
 
@@ -37,24 +36,43 @@ public class Programa implements Serializable {
     @NotNull
     @Size(min = 1, max = 8)
     @Column(name = "COD_PROGRAMA", nullable = false, length = 8)
+    /*
+    * Llave primaria de 8 caracteres que identifica al programa que ofrece el 
+    * instituto 
+    */
     private String codPrograma;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
     @Column(name = "NOMBRE", nullable = false, length = 100)
+    /*
+    * Atributo que almacena el nombre del programa que ofrece el instituto
+    */
     private String nombre;
     @Size(max = 4000)
     @Column(name = "DESCRIPCION", length = 4000)
+    /*
+    * Atributo que almacena una breve descripcion del programa
+    */
     private String descripcion;
     @Basic(optional = false)
     @NotNull
     @Column(name = "DURACION", nullable = false)
+    /*
+    * Atributo que almacena la duracion del programa en horas
+    */
     private short duracion;
     @Column(name = "FECHA_INICIO")
     @Temporal(TemporalType.DATE)
+    /*
+    * Atributo que almacena la informacion de la fecha en la que inicio el programa
+    */
     private Date fechaInicio;
     @Column(name = "FECHA_FIN")
     @Temporal(TemporalType.DATE)
+    /*
+    * Atributo que almacena la fecha en la que el programa ha terminado
+    */
     private Date fechaFin;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "programa")
     private List<ProgramaCurso> programaCursoList;
