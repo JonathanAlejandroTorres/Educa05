@@ -99,7 +99,8 @@ public class Capacitacion implements Serializable {
         this.codCapacitacion = codCapacitacion;
     }
 
-    public Capacitacion(Integer codCapacitacion, Date fechaInicio, Date fechaFin, String estado, short capacidad) {
+    public Capacitacion(Integer codCapacitacion, Date fechaInicio,
+            Date fechaFin, String estado, short capacidad) {
         this.codCapacitacion = codCapacitacion;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
