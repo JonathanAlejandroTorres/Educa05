@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Entidad que almacena la informacion de los alumnos que se inscriben en el 
+ * instituto
  */
 package ec.edu.espe.edu.educat.model;
 
@@ -34,36 +33,59 @@ public class Alumno implements Serializable {
     @NotNull
     @Size(min = 1, max = 10)
     @Column(name = "COD_ALUMNO", nullable = false, length = 10)
+    /*
+    * Llave primaria que corresponde a la cedula de identidad del alumno
+    */
     private String codAlumno;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 150)
     @Column(name = "NOMBRE", nullable = false, length = 150)
+    /*
+    * Atributo que almacena el nombre del alumno
+    */
     private String nombre;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 200)
     @Column(name = "DIRECCION", nullable = false, length = 200)
+    /*
+    * Atributo que almacena la direccion del alumno
+    */
     private String direccion;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 15)
     @Column(name = "TELEFONO", nullable = false, length = 15)
+    /*
+    * Atributo que almacena el numero de telefono del alumno este puede ser 
+    * maximo de 15 digitos
+    */
     private String telefono;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 128)
     @Column(name = "CORREO_ELECTRONICO", nullable = false, length = 128)
+    /*
+    * Atributo que almacena la direccion de correo electronico del alumno, 
+    * este puede ser maximo de 128 caracteres
+    */
     private String correoElectronico;
     @Basic(optional = false)
     @NotNull
     @Column(name = "FECHA_NACIMIENTO", nullable = false)
     @Temporal(TemporalType.DATE)
+    /*
+    * Atributo que almacena la fecha de nacimiento del alumno
+    */
     private Date fechaNacimiento;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 1)
     @Column(name = "GENERO", nullable = false, length = 1)
+    /*
+    * Atributo que almacena el genero del alumno
+    */
     private String genero;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "alumno")
     private List<CapacitacionAlumno> capacitacionAlumnoList;
