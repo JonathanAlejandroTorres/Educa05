@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Entidad que almacena los cursos que pertenecen a un programa. 
  */
 package ec.edu.espe.edu.educat.model;
 
@@ -23,11 +21,17 @@ public class ProgramaCursoPK implements Serializable {
     @NotNull
     @Size(min = 1, max = 8)
     @Column(name = "COD_PROGRAMA", nullable = false, length = 8)
+    /*
+    * Llave primaria de 8 caracteres que corresponde al programa
+    */
     private String codPrograma;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 8)
     @Column(name = "COD_CURSO", nullable = false, length = 8)
+    /*
+    * Llave primaria de 8 caracteres que corresponde al curso 
+    */
     private String codCurso;
 
     public ProgramaCursoPK() {
