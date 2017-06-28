@@ -41,7 +41,7 @@ public class Capacitacion implements Serializable {
     @Column(name = "COD_CAPACITACION", nullable = false)
     /*
     * Llave primaria que corresponde al codigo de la capacitacion
-    */
+     */
     private Integer codCapacitacion;
     @Basic(optional = false)
     @NotNull
@@ -49,7 +49,7 @@ public class Capacitacion implements Serializable {
     @Temporal(TemporalType.DATE)
     /*
     * Atributo que almacena la fecha de inicio de una capacitacion
-    */
+     */
     private Date fechaInicio;
     @Basic(optional = false)
     @NotNull
@@ -57,7 +57,7 @@ public class Capacitacion implements Serializable {
     @Temporal(TemporalType.DATE)
     /*
     * Atributo que almacena la fecha de finalizacion de la capacitacion
-    */
+     */
     private Date fechaFin;
     @Basic(optional = false)
     @NotNull
@@ -67,28 +67,29 @@ public class Capacitacion implements Serializable {
     * Atributo que almacena el estado de la capacitacion estos estados pueden 
     * ser: Inscripciones, En Progreso, Finalizada, Cancelada, Definida : 
     * (INS-PRO-FIN-CAN-DEF)
-    */
+     */
     private String estado;
     @Basic(optional = false)
     @NotNull
     @Column(name = "CAPACIDAD", nullable = false)
     /*
     * Atributo que almacena la capacidad que puede tener una capactiacion
-    */
+     */
     private short capacidad;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "capacitacion")
     private List<CapacitacionAlumno> capacitacionAlumnoList;
-    @JoinColumn(name = "COD_CURSO", referencedColumnName = "COD_CURSO", nullable = false)
+    @JoinColumn(name = "COD_CURSO", referencedColumnName = "COD_CURSO",
+            nullable = false)
     @ManyToOne(optional = false)
     /*
     * Llave foránea que corresponde al codigo del curso 
-    */
+     */
     private Curso codCurso;
     @JoinColumn(name = "COD_DOCENTE", referencedColumnName = "COD_DOCENTE")
     @ManyToOne
     /*
     * Clave primaria que corresponde a la cédula de identidad del docente
-    */
+     */
     private Docente codDocente;
 
     public Capacitacion() {
@@ -98,7 +99,8 @@ public class Capacitacion implements Serializable {
         this.codCapacitacion = codCapacitacion;
     }
 
-    public Capacitacion(Integer codCapacitacion, Date fechaInicio, Date fechaFin, String estado, short capacidad) {
+    public Capacitacion(Integer codCapacitacion, Date fechaInicio,
+            Date fechaFin, String estado, short capacidad) {
         this.codCapacitacion = codCapacitacion;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -194,5 +196,5 @@ public class Capacitacion implements Serializable {
     public String toString() {
         return "ec.edu.espe.edu.educat.model.Capacitacion[ codCapacitacion=" + codCapacitacion + " ]";
     }
-    
+
 }

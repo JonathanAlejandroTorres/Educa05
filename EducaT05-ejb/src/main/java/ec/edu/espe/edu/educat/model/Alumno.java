@@ -21,7 +21,6 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-
 @Entity
 @Table(name = "alumno")
 
@@ -35,7 +34,7 @@ public class Alumno implements Serializable {
     @Column(name = "COD_ALUMNO", nullable = false, length = 10)
     /*
     * Llave primaria que corresponde a la cedula de identidad del alumno
-    */
+     */
     private String codAlumno;
     @Basic(optional = false)
     @NotNull
@@ -43,7 +42,7 @@ public class Alumno implements Serializable {
     @Column(name = "NOMBRE", nullable = false, length = 150)
     /*
     * Atributo que almacena el nombre del alumno
-    */
+     */
     private String nombre;
     @Basic(optional = false)
     @NotNull
@@ -51,7 +50,7 @@ public class Alumno implements Serializable {
     @Column(name = "DIRECCION", nullable = false, length = 200)
     /*
     * Atributo que almacena la direccion del alumno
-    */
+     */
     private String direccion;
     @Basic(optional = false)
     @NotNull
@@ -60,7 +59,7 @@ public class Alumno implements Serializable {
     /*
     * Atributo que almacena el numero de telefono del alumno este puede ser 
     * maximo de 15 digitos
-    */
+     */
     private String telefono;
     @Basic(optional = false)
     @NotNull
@@ -69,7 +68,7 @@ public class Alumno implements Serializable {
     /*
     * Atributo que almacena la direccion de correo electronico del alumno, 
     * este puede ser maximo de 128 caracteres
-    */
+     */
     private String correoElectronico;
     @Basic(optional = false)
     @NotNull
@@ -77,7 +76,7 @@ public class Alumno implements Serializable {
     @Temporal(TemporalType.DATE)
     /*
     * Atributo que almacena la fecha de nacimiento del alumno
-    */
+     */
     private Date fechaNacimiento;
     @Basic(optional = false)
     @NotNull
@@ -85,13 +84,15 @@ public class Alumno implements Serializable {
     @Column(name = "GENERO", nullable = false, length = 1)
     /*
     * Atributo que almacena el genero del alumno
-    */
+     */
     private String genero;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "alumno")
     private List<CapacitacionAlumno> capacitacionAlumnoList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "alumno")
     private List<ProgramaAlumno> programaAlumnoList;
 
+    //para bajar es pull
+    //para subir es push
     public Alumno() {
     }
 
@@ -99,7 +100,9 @@ public class Alumno implements Serializable {
         this.codAlumno = codAlumno;
     }
 
-    public Alumno(String codAlumno, String nombre, String direccion, String telefono, String correoElectronico, Date fechaNacimiento, String genero) {
+    public Alumno(String codAlumno, String nombre, String direccion,
+            String telefono, String correoElectronico, Date fechaNacimiento,
+            String genero) {
         this.codAlumno = codAlumno;
         this.nombre = nombre;
         this.direccion = direccion;
@@ -195,7 +198,8 @@ public class Alumno implements Serializable {
             return false;
         }
         Alumno other = (Alumno) object;
-        if ((this.codAlumno == null && other.codAlumno != null) || (this.codAlumno != null && !this.codAlumno.equals(other.codAlumno))) {
+        if ((this.codAlumno == null && other.codAlumno != null) ||
+                (this.codAlumno != null && !this.codAlumno.equals(other.codAlumno))) {
             return false;
         }
         return true;
@@ -205,5 +209,5 @@ public class Alumno implements Serializable {
     public String toString() {
         return "ec.edu.espe.edu.educat.model.Alumno[ codAlumno=" + codAlumno + " ]";
     }
-    
+
 }
