@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Entidad que almacena la informacion del alumno en un programa.
  */
 package ec.edu.espe.edu.educat.model;
 
@@ -36,6 +34,10 @@ public class ProgramaAlumno implements Serializable {
     @NotNull
     @Size(min = 1, max = 3)
     @Column(name = "ESTADO", nullable = false, length = 3)
+    /*
+    * Atributo que almacena el estado del alumno en el programa este puede ser: 
+    * Inscrito, Matriculado, Programa, Fin (INS-MAT-PRO-FIN)
+    */
     private String estado;
     @JoinColumn(name = "COD_ALUMNO", referencedColumnName = "COD_ALUMNO", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
