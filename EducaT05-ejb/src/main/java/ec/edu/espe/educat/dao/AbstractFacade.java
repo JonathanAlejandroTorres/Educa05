@@ -1,4 +1,6 @@
-
+/*
+Este es mi comentario de la clase Abtracta
+*/
 package ec.edu.espe.educat.dao;
 
 import java.util.List;
