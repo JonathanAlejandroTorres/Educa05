@@ -1,4 +1,6 @@
-
+/*
+* Esta clase es la clase abstracta.
+*/
 package ec.edu.espe.educat.dao;
 
 import java.util.List;
