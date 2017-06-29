@@ -1,5 +1,6 @@
 /*
 Este es mi comentario de la clase Abtracta
+
 * Esta clase es la clase abstracta.
 */
 package ec.edu.espe.educat.dao;
