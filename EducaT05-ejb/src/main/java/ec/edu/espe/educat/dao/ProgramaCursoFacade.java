@@ -1,7 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+@(#)ProgramaCursoFacade.java     1.0 02/07/2017
+*
+*Copyright 2017 Grupo_05 All rights reserved.
+*Grupo_05 Propietary. Use is subject to license terms
+*/
+/**
+ *Clase que se encarga de contener los métodos de las clases que estan relacionadas
+ *con ProgramaCurso para que el usuario pueda realizar las peticiones, 
+ * accediendo así al subsistema
  */
 package ec.edu.espe.educat.dao;
 
@@ -11,8 +17,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
- *
- * @author Alejandro Torres
+ * @version 1.0
+ * @author Diego Yandun
  */
 @Stateless
 public class ProgramaCursoFacade extends AbstractFacade<ProgramaCurso> implements ProgramaCursoFacadeLocal {
