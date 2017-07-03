@@ -2,6 +2,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 
+
+    <description>El presente proyecto cubre el desarrollo e implementación de 
+        un sistema de información basado en la web que brinda la administración
+        de los cursos y programas que dicho instituto ofrece al público.
+        Cuenta con los siguientes módulos:
+        Gestión de usuarios
+        Gestión de cursos
+        Gestión de programas
+        Gestión de capacitación
+        Registro de notas
+        Consultar notas.
+    </description>
+    <url>https://github.com/JonathanAlejandroTorres/Educa05</url>
+
+    <organization>
+        <name>UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE</name>
+
+    </organization>     
+
+    <scm>
+        <connection>scm:git:https://github.com/JonathanAlejandroTorres/Educa05</connection>
+        <developerConnection>scm:git:https://github.com/JonathanAlejandroTorres/Educa05</developerConnection>
+        <url>scm:git:https://github.com/JonathanAlejandroTorres/Educa05</url>
+    </scm>
+      
     <developers>
         <developer>
             <id>dxyandun</id>
@@ -285,9 +311,5 @@
         </plugins>
         
     </reporting>
-    <scm>
-        <connection>scm:svn:https://github.com/JonathanAlejandroTorres/Educa05</connection>
-        <developerConnection>scm:svn:https://github.com/JonathanAlejandroTorres/Educa05</developerConnection>
-        <url>scm:svn:https://github.com/JonathanAlejandroTorres/Educa05</url>
-    </scm>
+    
 </project>
