@@ -9,7 +9,7 @@ import ec.edu.espe.edu.educat.model.Curso;
 import java.util.List;
 import javax.ejb.Local;
 
-/**
+/**jossssssss
  *
  * @author jeffe
  */

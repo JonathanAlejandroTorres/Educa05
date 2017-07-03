@@ -8,7 +8,7 @@ package ec.edu.espe.educat.dao;
 import ec.edu.espe.edu.educat.model.Docente;
 import java.util.List;
 import javax.ejb.Local;
-
+//joss
 /**
  *
  * @author jeffe
