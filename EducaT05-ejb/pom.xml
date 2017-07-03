@@ -13,6 +13,8 @@
     <packaging>ejb</packaging>
 
     <name>EducaT05-ejb</name>
+    <description>Descripción de qué hace el proyecto.</description>
+    <url>https://github.com/JonathanAlejandroTorres/Educa05</url>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
