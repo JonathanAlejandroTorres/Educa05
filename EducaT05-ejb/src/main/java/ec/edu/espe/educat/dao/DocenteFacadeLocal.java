@@ -1,17 +1,22 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+@(#)DocenteFacadeLocal.java     1.0 02/07/2017
+*
+*Copyright 2017 Grupo_05 All rights reserved.
+*Grupo_05 Propietary. Use is subject to license terms
+*/
+/**
+ *Interface Local DocenteFacadeLocal que contiene el 
+ * CRUD(crear,borrar,modificar,buscar) de la clase de entidad Docente
  */
 package ec.edu.espe.educat.dao;
 
 import ec.edu.espe.edu.educat.model.Docente;
 import java.util.List;
 import javax.ejb.Local;
-//joss
+
 /**
- *
- * @author jeffe
+ * @version 1.0
+ * @author Alejandro Torres
  */
 @Local
 public interface DocenteFacadeLocal {
