@@ -233,7 +233,7 @@
                 <artifactId>jdepend-maven-plugin</artifactId>
                 <version>2.0-beta-2</version>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-changes-plugin</artifactId>
                 <version>2.9</version>
@@ -241,7 +241,7 @@
                     <githubAPIScheme>https</githubAPIScheme>
                     <githubAPIPort>443</githubAPIPort>
                 </configuration>
-            </plugin>
+            </plugin> -->
             
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -256,11 +256,7 @@
                 </reportSets>
             </plugin>
             
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-changelog-plugin</artifactId>
-                <version>2.2</version>
-            </plugin> 
+            
             
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -294,11 +290,7 @@
                 <artifactId>taglist-maven-plugin</artifactId>
                 <version>2.4</version>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-changelog-plugin</artifactId>
-                <version>2.2</version>
-            </plugin> 
+            
             
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
