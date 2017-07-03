@@ -1,7 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+@(#)ProgramaAlumnoFacade.java     1.0 02/07/2017
+*
+*Copyright 2017 Grupo_05 All rights reserved.
+*Grupo_05 Propietary. Use is subject to license terms
+*/
+/**
+ * Clase que actua como punto de entrada a la Clase ProgramaAlumno 
+ * y hereda los métodos de la misma.
  */
 package ec.edu.espe.educat.dao;
 
@@ -9,10 +14,8 @@ import ec.edu.espe.edu.educat.model.ProgramaAlumno;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-//joss
-
-/**
- *
+/*
+ * @version 1.0
  * @author Alejandro Torres
  */
 @Stateless
