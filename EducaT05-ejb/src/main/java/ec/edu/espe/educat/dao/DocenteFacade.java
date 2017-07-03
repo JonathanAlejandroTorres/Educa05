@@ -1,7 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+@(#)DocenteFacade.java     1.0 02/07/2017
+*
+*Copyright 2017 Grupo_05 All rights reserved.
+*Grupo_05 Propietary. Use is subject to license terms
+*/
+/**
+ *Clase DocenteFacade generada a partir de la clase de entidad Docente
  */
 package ec.edu.espe.educat.dao;
 
@@ -10,9 +14,9 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-/**jossssssssss
- *
- * @author jeffe
+/**
+ * @version 1.0
+ * @author Alejandro Torres
  */
 @Stateless
 public class DocenteFacade extends AbstractFacade<Docente> implements DocenteFacadeLocal {
