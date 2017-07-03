@@ -352,7 +352,7 @@
                 <sendOnSuccess>false</sendOnSuccess>
                 <sendOnWarning>false</sendOnWarning>
                 <configuration>
-                    <address>continuum@127.0.0.1</address>
+                    <address>jitambaco@espe.edu.ec</address>
                 </configuration>
             </notifier>
         </notifiers>
