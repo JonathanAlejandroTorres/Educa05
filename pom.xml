@@ -41,7 +41,7 @@
             </roles>
             <timezone>America/Ecuador</timezone>
             <properties>
-                <picUrl>C:\Users\DiegoXavierYandun\Documents\NetBeansProjects\educat05\Educa05\EducaT05-ejb\target\site\images\diego.jpg</picUrl>
+                <picUrl>C:\Users\jeffe\Desktop\Software_Practica\Educa05\target\site\images\Diego.jpg</picUrl>
             </properties>
         </developer>
         <developer>
@@ -54,7 +54,7 @@
             </roles>
             <timezone>America/Ecuador</timezone>
             <properties>
-                <picUrl>C:\Users\DiegoXavierYandun\Documents\NetBeansProjects\educat05\Educa05\EducaT05-ejb\target\site\images\jeffo.jpg</picUrl>
+                <picUrl>C:\Users\jeffe\Desktop\Software_Practica\Educa05\target\site\images\Jefferson.jpg</picUrl>
             </properties>
         </developer>
         <developer>
@@ -67,7 +67,7 @@
             </roles>
             <timezone>America/Ecuador</timezone>
             <properties>
-                <picUrl></picUrl>
+                <picUrl> C:\Users\jeffe\Desktop\Software_Practica\Educa05\target\site\images\Alejandro.png</picUrl>
             </properties>
         </developer>
     </developers>
