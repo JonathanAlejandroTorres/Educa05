@@ -93,18 +93,17 @@
     
     <modelVersion>4.0.0</modelVersion>
     <groupId>espe.edu.ec.educat</groupId>
-    <artifactId>EducaT05</artifactId>
+    <artifactId>Educa05</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
   
     
   
-    <name>EducaT05</name>
+    <name>Educa05</name>
     <modules>
-        <module>EducaT05-ear</module>
-        <module>EducaT05-web</module>
-        <module>EducaT05-ejb</module>
-    
+        <module>Educa05-ear</module>
+        <module>Educa05-web</module>
+        <module>Educa05-ejb</module>
     </modules>
     
     <reporting>
