@@ -1,6 +1,12 @@
-/*
- * Entidad que almacena la informacion de los alumnos que se inscriben en el 
- * instituto
+/**
+ * .
+ * Esta es la clase Principal "StartedMain" la cual contiene las instancias de
+ * la clase Operacion y OperacionFloat.
+ *
+ * @author AyrtonWladimir
+ * @author jhona
+ * 
+ * 
  */
 package ec.edu.espe.edu.educat.model;
 
