@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" version="6">
+  <description>El presente proyecto cubre el desarrollo e implementación de 
+        un sistema de información basado en la web que brinda la administración
+        de los cursos y programas que dicho instituto ofrece al público.
+        Cuenta con los siguientes módulos:
+        Gestión de usuarios
+        Gestión de cursos
+        Gestión de programas
+        Gestión de capacitación
+        Registro de notas
+        Consultar notas.</description>
+  <display-name>Educa05-ear</display-name>
+  <module>
+    <ejb>Educa05-ejb-1.0-SNAPSHOT.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>Educa05-web-1.0-SNAPSHOT.war</web-uri>
+      <context-root>/Educa05-web</context-root>
+    </web>
+  </module>
+  <library-directory>lib</library-directory>
+</application>
