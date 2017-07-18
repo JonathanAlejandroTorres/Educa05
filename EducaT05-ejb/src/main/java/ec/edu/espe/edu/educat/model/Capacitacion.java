@@ -1,7 +1,4 @@
-/*
- * Entidad que almacena la informacion correspondiente a la capacitacion que 
- * el instituto ofrece
- */
+
 package ec.edu.espe.edu.educat.model;
 
 import java.io.Serializable;
