@@ -1,13 +1,5 @@
-/**
- * .
- * Esta es la clase Principal "StartedMain" la cual contiene las instancias de
- * la clase Operacion y OperacionFloat.
- *
- * @author AyrtonWladimir
- * @author jhona
- * 
- * 
- */
+ 
+
 package ec.edu.espe.edu.educat.model;
 
 import java.io.Serializable;
